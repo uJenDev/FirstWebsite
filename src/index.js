@@ -6,6 +6,8 @@ import About from './pages/About';
 import Home from './pages/Home';
 import NoPage from './pages/NoPage';
 
+import './index.css';
+
 
 export default function App() {
   return (
