@@ -6,13 +6,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: {
-          100: "#F3FAA6",
-          200: "#EAA7EB",
-          300: "#D1AADB",
-        },
+        primary: '#FA514D',
+        secondary: '#FAA74D',
       },
     },
+    fontFamily: {
+      quicksand: ["Quicksand", "sans-serif"],
+    },  
   },
   plugins: [],
 }

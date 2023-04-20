@@ -4,10 +4,9 @@ import { Outlet } from 'react-router-dom'
 const Layout = () => {
 
   return (
-    <header>
-        <h1>uJenDev</h1>
-        <Outlet />
-    </header>
+    <div className='px-10'>
+      <Outlet />
+    </div>
   )
 }
 
