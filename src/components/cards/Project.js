@@ -99,7 +99,7 @@ const Project = ({ data, width }) => {
             >
                 {data.images.map((image) => {
                     return (
-                        true
+                        data.type === 'mobile'
                         ?
                         (
                             <MobileScreenCard 

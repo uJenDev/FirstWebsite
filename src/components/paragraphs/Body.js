@@ -11,7 +11,7 @@ const Body = ({ width, breakpoint }) => {
   return (
     <div className='pt-10'>
 
-      <Socials width={width} breakpoint={breakpoint}/>
+      
 
       <div className='flex justify-center items-center h-[300px]'>
         <div className='flex flex-col items-center space-y-5'>

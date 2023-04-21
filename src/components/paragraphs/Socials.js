@@ -36,34 +36,36 @@ const Socials = ({ width, breakpoint }) => {
 
   return (
     <>
-        <div className={`flex flex-row items-center py-5 whitespace-nowrap ${width > 500 ? 'justify-center space-x-10' : 'justify-around space-x-5'}`}>
-        {socials.map((social) => {
-            return (
-                <button 
-                    key={social.id}
-                    className='hover:opacity-50'
-                    onClick={() => window.open(social.url, '_blank')}
-                >
-                    <img 
-                        src={social.logo}
-                        alt={social.name}
-                        className='h-10 w-10'
-                    />
-                </button>
-                )
-            })
-        }
-        {width > 500     ?
-        (<p className={`flex justify-center font-quicksand py-2 px-4 ${textSize} bg-white text-black rounded-full hover:opacity-50 cursor-pointer`}>
-            umj4455@gmail.com
-        </p>)
-        :
-        (<img 
-            src={require('../../assets/images/logos/email.png')}
-            alt='umj4455@gmail.com'
-            className='h-12 w-12'
-        />)
-        }
+        <h1 className='flex items-center justify-center'>Ta kontakt</h1>
+        <div className={`flex flex-row items-center py-5 whitespace-nowrap ${width > 500 ? 'justify-center space-x-10' : 'justify-around'}`}>
+            
+            {socials.map((social) => {
+                return (
+                    <button 
+                        key={social.id}
+                        className='hover:opacity-50'
+                        onClick={() => window.open(social.url, '_blank')}
+                    >
+                        <img 
+                            src={social.logo}
+                            alt={social.name}
+                            className='h-10 w-10'
+                        />
+                    </button>
+                    )
+                })
+            }
+            {width > 500     ?
+            (<p className={`flex justify-center font-quicksand py-2 px-4 ${textSize} bg-white text-black rounded-full hover:opacity-50 cursor-pointer`}>
+                umj4455@gmail.com
+            </p>)
+            :
+            (<img 
+                src={require('../../assets/images/logos/email.png')}
+                alt='umj4455@gmail.com'
+                className='h-12 w-12'
+            />)
+            }
         </div>
     </>
   )

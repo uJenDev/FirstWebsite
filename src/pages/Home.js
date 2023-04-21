@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react'
 import Body from '../components/paragraphs/Body'
+import Footer from '../components/paragraphs/Footer'
 import Title from '../components/paragraphs/Title'
 
 const Home = () => {
@@ -24,6 +25,11 @@ const Home = () => {
         />
 
         <Body 
+          width={width}
+          breakpoint={breakpoint}
+        />
+
+        <Footer
           width={width}
           breakpoint={breakpoint}
         />
