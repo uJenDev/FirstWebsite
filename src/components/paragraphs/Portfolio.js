@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import Project from '../cards/Project'
-
-import mockProjects from '../../assets/mockData/ProjectsData'
 import client from '../../sanity'
 
 const Portfolio = ({ width }) => {
@@ -23,13 +21,7 @@ const Portfolio = ({ width }) => {
             setLoading(false)
         })
         .catch('Error Ocurred Mate: ', console.error)
-        
     }, [])
-
-    useEffect(() => {
-        console.log(projects)
-    }, [projects])
-
 
   return (
     <div className=''>
@@ -39,7 +31,6 @@ const Portfolio = ({ width }) => {
                     key={project._id}
                     id={project._id}
                     data={project}
-                    project={projects[0]}
                     width={width}
                 />
             )

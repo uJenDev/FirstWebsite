@@ -4,22 +4,22 @@ import { MdChevronLeft, MdChevronRight, MdExpandLess, MdExpandMore } from 'react
 
 
  
-const Project = ({ data, width}) => {
+const Project = ({ data, width }) => {
 
     const slideLeft = () => {
-        const slider = document.getElementById('slider')
+        const slider = document.getElementById(`slider-${data._id}`)
         slider.scrollLeft -= 500
     }
 
     const slideRight = () => {
-        const slider = document.getElementById('slider')
+        const slider = document.getElementById(`slider-${data._id}`)
         slider.scrollLeft += 500
     }
 
     const [isOverflowing, setIsOverflowing] = useState(false)
 
     const checkOverflow = () => {
-        const slider = document.getElementById('slider')
+        const slider = document.getElementById(`slider-${data._id}`)
         if (slider.scrollWidth > slider.clientWidth) {
             setIsOverflowing(true)
         } else {
@@ -94,7 +94,7 @@ const Project = ({ data, width}) => {
 
         <div>
             <div
-                id="slider"
+                id={`slider-${data._id}`}
                 className={`py-5 flex overflow-x-scroll scroll scroll-smooth whitespace-nowrap space-x-5 px-5 scrollbar-hide`}
             >
                 {data.images.map((image) => {
