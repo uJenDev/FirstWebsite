@@ -4,7 +4,7 @@ import { MdChevronLeft, MdChevronRight, MdExpandLess, MdExpandMore } from 'react
 
 
  
-const Project = ({ data, width }) => {
+const Project = ({ data, width}) => {
 
     const slideLeft = () => {
         const slider = document.getElementById('slider')
@@ -97,14 +97,14 @@ const Project = ({ data, width }) => {
                 id="slider"
                 className={`py-5 flex overflow-x-scroll scroll scroll-smooth whitespace-nowrap space-x-5 px-5 scrollbar-hide`}
             >
-                {data.images.map((item, index) => {
+                {data.images.map((image) => {
                     return (
-                        data.isMobile
+                        true
                         ?
                         (
                             <MobileScreenCard 
-                                key={index} 
-                                imgURL={item.imgURL} 
+                                key={image._key} 
+                                image={image}
                             />
                         )
                         :

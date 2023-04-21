@@ -4,7 +4,6 @@ import Socials from './Socials'
 import { MdCode } from "react-icons/md";
 import Portfolio from './Portfolio';
 
-import projectsData from '../../assets/mockData/ProjectsData'
 
 const Body = ({ width, breakpoint }) => {
 
@@ -23,7 +22,6 @@ const Body = ({ width, breakpoint }) => {
 
       <Portfolio 
         width={width}
-        projects={projectsData}
       />
       
       <div className='h-[100px]' /> 
