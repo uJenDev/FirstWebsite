@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from 'react'
-import Body from '../components/paragraphs/Body'
-import Title from '../components/paragraphs/Title'
+import { Outlet } from 'react-router-dom'
+import NavBar from '../components/NavBar'
 
-const Home = () => {
+const Layout = () => {
 
   // Width of window and breakpoint (for responsive design)
   const [width, setWidth] = useState(window.innerWidth)
@@ -18,17 +18,13 @@ const Home = () => {
 
   return (
     <>
-        <Title 
-          width={width}
-          breakpoint={breakpoint}
-        />
-
-        <Body 
-          width={width}
-          breakpoint={breakpoint}
-        />
+      <NavBar 
+        width={width}
+        breakpoint={breakpoint}
+      />
+      <Outlet />
     </>
   )
 }
 
-export default Home
+export default Layout

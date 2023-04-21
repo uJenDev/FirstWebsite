@@ -14,6 +14,8 @@ module.exports = {
       quicksand: ["Quicksand", "sans-serif"],
     },  
   },
-  plugins: [],
+  plugins: [
+    require('tailwind-scrollbar-hide'),
+  ],
 }
 
