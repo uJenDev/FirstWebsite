@@ -2,6 +2,8 @@ import React, { useEffect, useState } from 'react'
 import MobileScreenCard from './MobileScreenCard'
 import { MdChevronLeft, MdChevronRight, MdExpandLess, MdExpandMore } from 'react-icons/md'
 
+import { isMobile } from 'react-device-detect'
+
 
  
 const Project = ({ data, width }) => {
@@ -112,7 +114,7 @@ const Project = ({ data, width }) => {
                     )}
                 )}
             </div>
-            {isOverflowing &&
+            {(isOverflowing && !isMobile) &&
             (<div className='flex flex-row items-center justify-around'>
                 <MdChevronLeft
                     onClick={slideLeft}
