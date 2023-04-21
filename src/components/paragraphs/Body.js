@@ -1,13 +1,10 @@
 import React from 'react'
-import Socials from './Socials'
 
 import { MdCode } from "react-icons/md";
 import Portfolio from './Portfolio';
 
 
-const Body = ({ width, breakpoint }) => {
-
-
+const Body = ({ width }) => {
   return (
     <div className='pt-10'>
 
