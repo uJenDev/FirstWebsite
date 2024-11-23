@@ -15,7 +15,7 @@ const NavBar = ({ width, breakpoint }) => {
 
   return (
     <nav className='pb-10 pt-5 px-10'>
-        <h1 className={`font-quicksand ${textSize}`}>uJenDev</h1>
+        <h1 className={`font-quicksand ${textSize}`}>umj</h1>
     </nav>
   )
 }

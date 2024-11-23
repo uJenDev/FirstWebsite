@@ -36,7 +36,7 @@ const Socials = ({ width, breakpoint }) => {
 
   return (
     <>
-        <h1 className='flex items-center justify-center'>Ta kontakt</h1>
+        <h1 className='flex items-center justify-center'>Find me</h1>
         <div className={`flex flex-row items-center py-5 whitespace-nowrap ${width > 500 ? 'justify-center space-x-10' : 'justify-around'}`}>
             
             {socials.map((social) => {

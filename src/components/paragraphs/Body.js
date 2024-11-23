@@ -12,7 +12,7 @@ const Body = ({ width }) => {
 
       <div className='flex justify-center items-center h-[300px]'>
         <div className='flex flex-col items-center space-y-5'>
-          <p className='text-2xl font-quicksand'>Se mine prosjekter</p>
+          <p className='text-2xl font-quicksand'>My portfolio</p>
           <MdCode className='h-10 w-10' color='white'/>
         </div>
       </div>
